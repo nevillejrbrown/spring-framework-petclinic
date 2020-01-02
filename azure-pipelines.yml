@@ -30,7 +30,7 @@ steps:
   inputs:
     azureSubscription: 'connection-to-j-tutorial-rg'
     Action: 'Restart Azure App Service'
-    WebAppName: 'j-tutorial-app-name'
+    WebAppName: 'nevillejrbrown-j-tutorial-app-name'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
     RuntimeStack: 'JAVA|8-jre8'
 

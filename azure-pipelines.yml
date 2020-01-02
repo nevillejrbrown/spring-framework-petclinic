@@ -26,11 +26,12 @@ steps:
     azureSubscription: 'connection-to-j-tutorial-rg'
     appType: 'webAppLinux'
     WebAppName: 'nevillejrbrown-j-tutorial-app-name'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
+    RuntimeStack: 'JAVA|8-jre8'    
 - task: AzureAppServiceManage@0
   inputs:
     azureSubscription: 'connection-to-j-tutorial-rg'
     Action: 'Restart Azure App Service'
     WebAppName: 'nevillejrbrown-j-tutorial-app-name'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
-    RuntimeStack: 'JAVA|8-jre8'
+
 
